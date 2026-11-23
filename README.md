@@ -6,10 +6,12 @@ steht eine CSV mit Buchungssätzen (SKR03).
 
 Das Werkzeug läuft **vollständig für sich** – eigener Startknopf, eigene
 Python-Umgebung, kein Kontakt zu FastAPI-Backend, Datenbank oder Frontend von
-RechnungsFee. Derselbe Quelltext liegt zusätzlich im Repo
-[RechnungsFee](https://github.com/AlibabaDum/RechnungsFee) unter
-`werkzeug/rechnung-buchen`; dort ist er zusätzlich als Seite
-„Buchhaltung → Beleg-Import" eingebaut und bucht direkt ins Journal.
+RechnungsFee. **Hauptentwicklung** ist der Ordner `werkzeug/rechnung-buchen` im
+Repo [RechnungsFee](https://github.com/AlibabaDum/RechnungsFee) – Änderungen
+landen dort zuerst; dieser Repo ist ein eigenständiger Stand desselben
+Programms zum Herunterladen und unmittelbaren Ausprobieren. In RechnungsFee ist
+dieselbe Erkennung zusätzlich als Seite „Buchhaltung → Beleg-Import" eingebaut
+und bucht dort direkt ins Journal.
 
 ## Was es kann
 
@@ -97,6 +99,16 @@ enthalten oder nur lokal entstehen:
 In der Lizenzliste von RechnungsFee (`THIRD_PARTY_LICENSES.txt`) stehen
 RapidOCR, onnxruntime und PySide6 noch nicht – dort fehlt also eine Ergänzung,
 siehe [ANDERUNGEN.md](ANDERUNGEN.md) unter „offene Punkte".
+
+## Lizenz
+
+Dieses Programm steht unter **AGPL-3.0** (vollständiger Text in
+[LICENSE](LICENSE)), genau wie RechnungsFee. Wichtige Folge: Wer diese Software
+verändert und andere sie über ein Netz (auch über einen eigenen Server) nutzen
+lässt, muss den veränderten Quelltext ebenfalls unter AGPL-3.0 herausgeben. Die
+OCR-Bibliotheken sind darüber nicht frei verfügbar – die Tabelle oben zeigt ihre
+eigenen Lizenzen (Apache-2.0, MIT, BSD, LGPL); beim Ausliefern gehören die
+Hinweise zu PyMuPDF (AGPL) und PySide6 (LGPL) mit dazu.
 
 ## Verhältnis zu RechnungsFee (offene Punkte)
 
