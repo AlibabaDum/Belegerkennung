@@ -1,0 +1,14 @@
+# Locales von der Belegerkennung - enthaelt personenbezogene Daten oder
+# ist installierbar und gehoert deshalb nicht ins Repo.
+konten.json
+.cache/
+letzter Fehler.txt
+*.csv
+*.pdf
+belege*.json
+beispiele/
+python/
+libs/
+.venv/
+__pycache__/
+*.pyc
